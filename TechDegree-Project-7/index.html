@@ -254,12 +254,56 @@
         <!-- End Messages Widget -->
         </section>
 
-
+        <!-- Begin Settings Widget -->
         <section class="settings">
             <h3>Settings</h3>
+            <!-- Custom CSS Toggle Code -->
+            <div class="setting-option">
+              <p>Set Profile to Public</p>
+                <label class="switch" onclick="">
+                    <input type="checkbox" id="public-option" checked>
+                    <span>
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                    </span>
+                </label>  
+            </div>
+            <!-- End CSS Toggle Code -->
 
+            <!-- Custom CSS Toggle Code -->
+            <div class="setting-option">
+                <p>Send Email Notifications</p>
+                  <label class="switch" onclick="">
+                      <input type="checkbox" id="email-y-n" checked>
+                      <span>
+                          <span>Off</span>
+                          <span>On</span>
+                          <a></a>
+                      </span>
+                  </label>  
+              </div>
+              <!-- End CSS Toggle Code -->
+        
+        <!-- Timezone Div -->
+         <div class="timezone-select">
+            <select class="form-field" id="timezone">
+                <option disabled selected>Select a Timezone</option>
+                <option value="east">Eastern</option>
+                <option value="pst">PST</option>
+                <option value="east">MST</option>
+            </select>
+        </div>
+        <!-- End Timezone Div -->
+
+        <!-- Buttons Div -->
+        <div class="settings-button">
+            <button class="button-primary" id="save">Save</button>
+            <button class="button-disabled" id="cancel">Cancel</button>
+        </div>
+        <!-- End Buttons Div -->
         </section>
-
+        <!-- End Settings Widget -->
     </main>
 </body>
 </html>
