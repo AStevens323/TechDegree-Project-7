@@ -24,4 +24,54 @@
 
 .main {
     grid-area: main;
+    display: grid;
 }
+
+/* Widget Styling ----------------------------------------------------------------------------------------------------------------------- */
+    .widget-container-full, .widget-container-half {
+        width: 95vw;
+    }
+
+
+/* Media Query --- Grid Styling */
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-rows: 
+            "header header"
+            "navigation main";    
+    }
+
+    .main {
+        grid-template-columns: 50%;
+    }
+
+    /* Column Layout Styling -----------*/
+    .traffic, .social {
+        grid-column: 1/ span 2;
+    }
+
+    .daily, .members, .message {
+        grid-column: 1/ span 1;
+    }
+
+    .mobile, .activity, .settings {
+        grid-column: 2/ span 1;
+    }
+
+    /* Widget Styling ---------------- */
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+
+}
+
+
+
+
+/* @media (min-width: 1024px) {} -----------------  ADD 1024PX MEDIA QUERY CONTENT  */
