@@ -2,3 +2,21 @@
     box-sizing: border-box;
 }
 
+/* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
+
+.grid-container{
+    display: grid;
+    
+}
+
+.header {
+    grid-area: header;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.main {
+    grid-area: main;
+}
