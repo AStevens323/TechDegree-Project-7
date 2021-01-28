@@ -1,6 +1,52 @@
 * {
     box-sizing: border-box;
+    /* background-color: gray; */
 }
+
+body {
+   margin: 0 auto;
+   width: 100%;
+    }
+
+h1 {
+    font-size: 27px;
+    margin-left: 3%;
+    color: white;
+}
+
+.bell-icon {
+    height: 25px;
+}
+
+.bell-container {display: flex;align-items: center;margin-left: 16%;}
+
+.header {
+    display: flex;
+    background-color: #8652A1;
+    width: 100vw;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.user-account img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    float: right;
+}
+
+.user-account h3 {
+    margin: 0%;
+    font-size: 15px;
+    margin-left: 5%;
+    color: white;
+}
+
+
 
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
 
