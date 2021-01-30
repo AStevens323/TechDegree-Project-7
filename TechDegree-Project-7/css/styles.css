@@ -76,7 +76,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ADADAD;
+    background-color: gray;
     margin-bottom: 15px;
 }
 
@@ -121,6 +121,20 @@ h1 {
 .alert-banner-close {
     
 display: inline-block;
+}
+
+/* End Alert Banner Styling -------------------------------------------------------------------------------------------------------------- */
+
+/* Line Graph Styling -------------------------------------------------------------------------------------------------------------- */
+
+.traffic h3 {
+    margin: 15px;
+    border-bottom: 1px solid #ADADAD;
+    padding: 10px;
+}
+
+#traffic-chart {
+    width: 100%;
 }
 
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
