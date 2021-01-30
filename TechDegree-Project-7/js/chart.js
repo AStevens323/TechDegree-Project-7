@@ -1,6 +1,6 @@
 const trafficCanvas = document.getElementById("traffic-chart");
 const dailyCanvas = document.getElementById("daily-chart");
-
+const mobileCanvas = document.getElementById("mobile-chart");
 
 // // Chart Widgets -------------------------------------------------------------------------------------/
     // LINE GRAPH::
@@ -42,7 +42,7 @@ const dailyCanvas = document.getElementById("daily-chart");
 // End LINE GRAPH -------------------------------------------------------------------------------------------------------------------------------------
 // Begin BAR GRAPH ------------------------------------------------------------------------------------------------------------------------------------
 
-const dailyData = {
+let dailyData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
     label: '# of Hits',
@@ -52,7 +52,7 @@ const dailyData = {
     }]
     };
 
-const dailyOptions = {
+let dailyOptions = {
     scales: {
     yAxes: [{
     ticks: {
@@ -70,3 +70,42 @@ let dailyChart = new Chart(dailyCanvas, {
         data: dailyData,
         options: dailyOptions
         });
+
+//End Begin BAR GRAPH ------------------------------------------------------------------------------------------------------------------------------------
+// Begin Doughnut Graph ----------------------------------------------------------------------------------------------------------------------------------
+
+let mobileData = {
+    labels: ['Desktop', 'Tables', 'Phones'],
+    datasets: [{
+        label: '# of Mobile Users',
+        data: [500, 600, 700],
+        backgroundColor: [
+            '#7477bf',
+            '#78cf82',
+            '51b6c8'
+        ]
+    }]
+};
+
+const mobileOptions = {
+    legend: {
+
+        display: true,
+        position: 'right',
+        label: {
+            boxWidth: 20,
+            fontStyle: 'bold'
+        }
+    },
+    responsive: true,
+    layout: {
+        padding: 10,
+
+    }
+}
+
+let mobileChart = new Chart(mobileCanvas, {
+    type: 'doughnut',
+    data: mobileData,
+    options: mobileOptions
+})
