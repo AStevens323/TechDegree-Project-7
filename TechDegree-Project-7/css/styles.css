@@ -74,6 +74,28 @@ h1 {
 
 .main-header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ADADAD;
+}
+
+.headline {
+    float: left;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 2%;
+}
+
+.search-bar {
+    float: right;
+    margin-right: 5px;
+    margin-left: 4px;
+}
+
+.search-bar input {
+    border-radius: 5%;
+    padding: 4px;
 }
 
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
