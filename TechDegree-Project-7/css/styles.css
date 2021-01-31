@@ -142,7 +142,63 @@ display: inline-block;
         border-bottom: 1px solid #ADADAD;
     }
 
+/* Pie-Graph Graph Styling -------------------------------------------------------------------------------------------------------------- */
 
+.mobile {
+    border-bottom: 1px solid #ADADAD;;
+} 
+
+.mobile h3 {
+    margin: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ADADAD;
+ }  
+ 
+/* End Pie-Graph Graph Styling -------------------------------------------------------------------------------------------------------------- */
+
+/* Social Stats Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
+
+.social-stats h3 {
+    margin: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ADADAD; 
+}
+
+.logo-picture {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.social-container {
+    border: 1px solid #E1E1E1;
+    width: 100vw;
+}
+
+.social-image {
+    background-color:#F7F7F7;
+    text-align: center;
+}
+
+.social-text {
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+.social-text p {
+    margin-top: 0;
+}
+
+.social-title {
+    color: #8652A1;
+    font-size: 21px;
+}
+
+.numbers {
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
 
 .grid-container{
