@@ -199,6 +199,28 @@ display: inline-block;
     font-size: 18px;
     margin-bottom: 0;
 }
+/* End Social Stats Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
+
+/* New Members Styling ---------------------------------------------------------------------------------------------------------------------------*/
+
+    .members h3 {
+        margin: 15px;
+        padding: 10px;
+        border-bottom: 1px solid #ADADAD;
+    }
+
+    .members-container {
+        display: flex;
+    }
+
+    .members-text {
+        font-size: 20px;
+    }
+    
+    .member-profile-image {
+        border-radius: 50%;
+    }
+
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
 
 .grid-container{
