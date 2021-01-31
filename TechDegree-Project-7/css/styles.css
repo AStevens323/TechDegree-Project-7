@@ -225,6 +225,32 @@ display: inline-block;
         width: 30%;
     }
 
+/* End New Members Styling ---------------------------------------------------------------------------------------------------------------------------*/
+
+/* Recent Activity Styling ---------------------------------------------------------------------------------------------------------------------------*/
+
+.recent-activity h3 {
+    margin: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ADADAD;
+}
+
+.activity-container {
+    display: flex;
+    background-color: #F7F7F7;
+    border: 1px solid #E1E1E1;
+}
+
+.activity-text {
+    font-size: 13px;
+}
+
+.arrow-symbol {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
 
 .grid-container{
