@@ -282,12 +282,51 @@ display: inline-block;
     border-radius: 10%;
 }
 
-.button-primary {
+.button-primary-send {
     margin-top: 5px;
     padding: 3%;
     background-color: #8652A1;
     color: white;
     font-size: 18px;
+}
+
+/* Settings Widget ----------------------------------------------------------------------------------------------------------------------- */
+.settings h3 {
+    margin: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ADADAD;
+}
+
+.settings-text {color: #8652A1;font-size: 15px;}
+
+.timezone-select {
+    text-align: center;
+}
+
+#timezone {
+    margin-top: 30px;
+    width: 100vw;
+    padding: 10px;
+}
+
+.settings-button {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+
+.button-primary {
+    float: left;
+    padding: 5px 15%;
+    background-color: #8652A1;
+    color: white;
+}
+
+.button-disabled {
+    float: right;
+    padding: 5px 15%;
+    background-color: #8652A1;
+    color: white;
 }
 
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/

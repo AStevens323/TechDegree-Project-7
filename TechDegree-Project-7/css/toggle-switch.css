@@ -31,7 +31,10 @@
     display: block;
     /* simulate default browser focus outlines on the switch,
    * when the inputs are focused.
-   */ }
+   */
+    margin-top: 15px;
+    text-align: center;
+    }
     .switch-light::after {
       clear: both;
       content: '';
