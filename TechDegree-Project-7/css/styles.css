@@ -495,9 +495,41 @@ display: inline-block;
         }
     /* End Pie-graph Widget Styling ------------------------------------------------------------------------------ */
 
-    /* New Members Widget Styling ------------------------------------------------------------------------------ */
-
     
+    .member-float-container {
+        display: flex;
+
+    }
+    
+    /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
+        
+        .members {
+            width: 50%;
+            
+        }    
+
+        .members-container {
+            margin-left: 5px;
+        }
+
+        .member-profile-image {
+            width: 25%; 
+        }
+
+        /* ============================= */
+        .members-text, .activity-text {
+            font-size: 17px;
+        }
+
+        .activity-container {
+            flex-grow: 1;
+            padding-bottom: 12.5px;
+        }
+        
+        .recent-activity {
+            width: 50%;
+            }
+
 
 
 };
