@@ -485,6 +485,7 @@ display: inline-block;
 
      .social-container {
          margin-left: 5px;
+         width: 100%;
      }
      
      /* End Social Stats Widget ------------------------------------------------------------------------------ */
@@ -518,18 +519,45 @@ display: inline-block;
 
         /* ============================= */
         .members-text, .activity-text {
-            font-size: 17px;
+            font-size: 18px;
         }
 
         .activity-container {
             flex-grow: 1;
-            padding-bottom: 12.5px;
         }
         
         .recent-activity {
             width: 50%;
             }
+    /* End New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
 
+            .messages, .settings, .switch-light, .settings-button {
+                width: 50%;
+                border-left: 1px #E1E1E1 solid;
+            }
 
+            .switch-light {
+                margin-left: 89px;
+            }
 
-};
+            .messages-settings-float-container {
+                display: flex;
+            }
+
+            .toggle-container {
+                text-align: center;
+            }
+
+            #timezone {
+               width: 50%;
+            }
+
+            .settings-button {
+            width: 100%;
+            }
+
+            .button-primary-send {
+                margin-top: 72px;
+            }
+
+        };
