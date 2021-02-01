@@ -50,7 +50,7 @@ h1 {
 
 .bell-icon:hover {
     /* Animation */
-    animation: ring .7s ease-in-out forwards;
+    animation: ring 4s .7s ease-in-out forwards;
     transform-origin: 50% 4px;
 }
 
@@ -164,7 +164,7 @@ h1 {
 }
 
 .search-bar {
-    float: right;
+    /* float: right; */
     margin-right: 5px;
     margin-left: 4px;
 }
@@ -247,7 +247,7 @@ display: inline-block;
 
 .social-container {
     border: 1px solid #E1E1E1;
-    width: 100vw;
+    width: 100%;
 }
 
 .social-image {
@@ -431,12 +431,10 @@ display: inline-block;
     }
 
     .navigation img {
-        
-width: 40px;
-        
-height: 30px;
-        
-margin: 20px 0;
+        width: 40px;
+        height: 30px;
+         margin: 20px 0;
+    
     }
 
     .clearfix::after {
@@ -444,6 +442,33 @@ margin: 20px 0;
         clear: both;
         display: table;
       }
+      /* End Navigation Styling ------------------------------------------------------------------ */
+
+    /* Header Styling ------------------------------------------------------------------------- */
+
+    .header {
+          width: 100%;
+      }
+
+    .bell-icon {
+         margin-left: 366px;
+     }
+
+     /* End Header Styling ------------------------------------------------------------------------- */
+
+     /* Dashboard Styling ------------------------------------------------------------------------- */
+
+     .headline {
+         margin-left: 5px;
+     }
+
+     .search-bar input {
+        width: 300px;
+    }
+
+     .search-bar {
+     margin-right: 15px;
+     }
 
 
 };
