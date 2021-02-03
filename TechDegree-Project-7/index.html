@@ -277,54 +277,56 @@
             <section class="settings">
                 <h3>Settings</h3>
                 <!-- Custom CSS Toggle Code -->
-                <div class="toggle-container">
-                    <label class="switch-light switch-candy" onclick="">
-                        <input type="checkbox">
-                    
-                        <strong class="settings-text">
-                        Send Email Notifications
-                        </strong>
-                    
-                        <span>
-                        <span>Off</span>
-                        <span>On</span>
-                        <a></a>
-                        </span>
-                    </label>
+                <div class="settings-container">
+                    <div class="toggle-container">
+                        <label class="switch-light switch-candy" onclick="">
+                            <input type="checkbox">
+                        
+                            <strong class="settings-text">
+                            Send Email Notifications
+                            </strong>
+                        
+                            <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                            </span>
+                        </label>
+                        <!-- End CSS Toggle Code -->
+
+                        <!-- Custom CSS Toggle Code -->
+                        <label class="switch-light switch-candy" onclick="">
+                            <input type="checkbox">
+                        
+                            <strong class="settings-text">
+                            Set Profile to Public
+                            </strong>
+                        
+                            <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                            </span>
+                        </label>
+                    </div>
                     <!-- End CSS Toggle Code -->
-
-                    <!-- Custom CSS Toggle Code -->
-                    <label class="switch-light switch-candy" onclick="">
-                        <input type="checkbox">
-                    
-                        <strong class="settings-text">
-                        Set Profile to Public
-                        </strong>
-                    
-                        <span>
-                        <span>Off</span>
-                        <span>On</span>
-                        <a></a>
-                        </span>
-                    </label>
+                
+                <!-- Timezone Div -->
+                <div class="timezone-select">
+                    <select class="form-field" id="timezone">
+                        <option disabled selected>Select a Timezone</option>
+                        <option value="east">Eastern</option>
+                        <option value="pst">PST</option>
+                        <option value="east">MST</option>
+                    </select>
                 </div>
-                <!-- End CSS Toggle Code -->
-            
-            <!-- Timezone Div -->
-            <div class="timezone-select">
-                <select class="form-field" id="timezone">
-                    <option disabled selected>Select a Timezone</option>
-                    <option value="east">Eastern</option>
-                    <option value="pst">PST</option>
-                    <option value="east">MST</option>
-                </select>
-            </div>
-            <!-- End Timezone Div -->
+                <!-- End Timezone Div -->
 
-            <!-- Buttons Div -->
-            <div class="settings-button">
-                <button class="button-primary" id="save">Save</button>
-                <button class="button-disabled" id="cancel">Cancel</button>
+                <!-- Buttons Div -->
+                <div class="settings-button">
+                    <button class="button-primary" id="save">Save</button>
+                    <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
             </div>
             <!-- End Buttons Div -->
             </section>

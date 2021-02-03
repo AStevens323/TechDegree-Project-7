@@ -15,6 +15,9 @@ h1 {
     position: relative;
 }
 
+canvas {
+    max-width: 100%;
+}
 /*End Element Styling --------------------------------------------------------------------------------------------------------------- */
 
 /* Grid Styling ---------------------------------------------------------------------------------------------------------------------------*/
@@ -502,7 +505,7 @@ display: inline-block;
      .social-container {
          width: 60%;
          position: relative;
-         left: 145px;
+         left: 152px;
      }
      
      /* End Social Stats Widget ------------------------------------------------------------------------------ */
@@ -585,6 +588,7 @@ display: inline-block;
 
     .toggle-container {
         text-align: center;
+        margin-left: -9px;
     }
 
     #timezone {
@@ -593,6 +597,7 @@ display: inline-block;
 
     .settings-button {
         width: 100%;
+        margin-left: 10px;
     }
 
     .button-primary-send {
@@ -603,7 +608,15 @@ display: inline-block;
 
 
 @media (min-width: 1024px) {
-        /* User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
+    
+    .settings-container {
+
+    }
+    
+    
+    
+    
+    /* User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
     
         .user-account {
             position: absolute;
@@ -611,24 +624,46 @@ display: inline-block;
             top: 8px;
         }
         
-        
-        
-        
         .alert-banner {
             margin-left: 8px;
         }
         
-        
-        
-        /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
-            
+    /* End User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
+
+    /* Alert Banner Styling ------------------------------------------------------------------------------------------------------- */
+    
+        .alert-banner {
+        margin-left: 8px;
+         }
+
+    /* End Alert Banner Styling ------------------------------------------------------------------------------------------------------- */
+
+    /* Social Stats Container ------------------------------------------------------------------------------------------------ */
         .social-stats {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
+        .social-container {
+            width: 60%;
+            position: relative;
+            left: 187px;
+        }
+        
+    /* End Social Stats Container ------------------------------------------------------------------------------------------------ */
+
+    .toggle-container {
+        text-align: center;
+        margin-left: 37px;
+    }
+
+    .button-primary-send {
+        margin-top: 48px;
+    }
         
         
+    /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
          .members {
              width: 50%;
              
