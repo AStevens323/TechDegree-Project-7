@@ -328,7 +328,10 @@ display: inline-block;
 .arrow-symbol {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* End Recent Activity Styling ---------------------------------------------------------------------------------------------------------------------------*/
@@ -553,11 +556,12 @@ display: inline-block;
 
     /* ============================= */
     .members-text, .activity-text {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .activity-container {
         flex-grow: 1;
+        position: relative;
     }
     
     .recent-activity {
