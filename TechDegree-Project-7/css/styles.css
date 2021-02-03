@@ -12,6 +12,7 @@ h1 {
     font-size: 27px;
     margin-left: 3%;
     color: white;
+    position: relative;
 }
 
 /*End Element Styling --------------------------------------------------------------------------------------------------------------- */
@@ -94,7 +95,7 @@ h1 {
     background-color: lightgreen;
     border-radius: 50%;
     display: inline-block;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
 
@@ -110,7 +111,10 @@ h1 {
 .user-account {
     display: flex;
     align-items: center;
-    margin-left: 3%;
+    /* margin-left: 3%; */
+    position: absolute;
+    right: -47px;
+    top: 8px;
 }
 
 .user-account img {
@@ -292,6 +296,7 @@ display: inline-block;
 
     .members-text {
         font-size: 13px;
+        position: relative;
     }
     
     .member-profile-image {
@@ -428,6 +433,7 @@ display: inline-block;
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
+        position: relative;
     }
 
     .navigation img {
@@ -451,7 +457,14 @@ display: inline-block;
       }
 
     .bell-icon {
-         margin-left: 366px;
+         position: absolute;
+         right: 167px;
+     }
+
+     .dot {
+     position: absolute;
+     right: 162px;
+     top: 19px;
      }
 
      /* End Header Styling ------------------------------------------------------------------------- */
@@ -484,8 +497,9 @@ display: inline-block;
      /* Social Stats Widget ------------------------------------------------------------------------------ */
 
      .social-container {
-         margin-left: 5px;
-         width: 100%;
+         width: 60%;
+         position: relative;
+         left: 145px;
      }
      
      /* End Social Stats Widget ------------------------------------------------------------------------------ */
@@ -503,61 +517,115 @@ display: inline-block;
     }
     
     /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
+
+   .social-stats {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+   
+   
+    .members {
+        width: 50%;
         
-        .members {
-            width: 50%;
-            
-        }    
+    }    
 
-        .members-container {
-            margin-left: 5px;
-        }
+    .members-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-left: 5px;
+        align-items: center;
+    }
 
-        .member-profile-image {
-            width: 25%; 
-        }
+    .date {
+        /* grid-column: 2/span 3; */
+        position: absolute;
+        left: 188px;
+        top: 30px;
+    }
 
-        /* ============================= */
-        .members-text, .activity-text {
-            font-size: 18px;
-        }
+    .member-profile-image {
+        width: 70px;
+        height: 70px;
+    }
 
-        .activity-container {
-            flex-grow: 1;
+    /* ============================= */
+    .members-text, .activity-text {
+        font-size: 12px;
+    }
+
+    .activity-container {
+        flex-grow: 1;
+    }
+    
+    .recent-activity {
+        width: 50%;
         }
         
-        .recent-activity {
-            width: 50%;
-            }
     /* End New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
 
-            .messages, .settings, .switch-light, .settings-button {
-                width: 50%;
-                border-left: 1px #E1E1E1 solid;
-            }
+    .messages, .settings, .switch-light, .settings-button {
+        width: 50%;
+        border-left: 1px #E1E1E1 solid;
+    }
 
-            .switch-light {
-                margin-left: 89px;
-            }
+    .switch-light {
+        margin-left: 89px;
+    }
 
-            .messages-settings-float-container {
-                display: flex;
-            }
+    .messages-settings-float-container {
+        display: flex;
+    }
 
-            .toggle-container {
-                text-align: center;
-            }
+    .toggle-container {
+        text-align: center;
+    }
 
-            #timezone {
-               width: 50%;
-            }
+    #timezone {
+        width: 50%;
+    }
 
-            .settings-button {
-            width: 100%;
-            }
+    .settings-button {
+        width: 100%;
+    }
 
-            .button-primary-send {
-                margin-top: 72px;
-            }
+    .button-primary-send {
+        margin-top: 72px;
+    }
 
         };
+
+
+@media (min-width: 1024px) {
+
+    /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
+        
+    .members {
+        width: 50%;
+        
+    }    
+
+    .members-container {
+        margin-left: 5px;
+    }
+
+    .member-profile-image {
+        width: 25%; 
+    }
+
+    /* ============================= */
+    .members-text, .activity-text {
+        font-size: 18px;
+    }
+
+    .activity-container {
+        flex-grow: 1;
+    }
+    
+    .recent-activity {
+        width: 50%;
+        }
+/* End New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
+}
