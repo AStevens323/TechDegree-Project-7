@@ -653,9 +653,39 @@ top: 36px;
     
     /* End Alert Banner Styling ------------------------------------------------------------------------------------------------------- */
 
+    /* Chart Styling ------------------------------------------------------------------------------------------------------------------ */
+
+    .daily-mobile-desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .daily {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid #ADADAD;
+    }
+    
+    .mobile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+
+    }
+    
     /* Social Stats Container ------------------------------------------------------------------------------------------------ */
+    
+    .social-container-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
     .social-container {
-            width: 100%;
+            width: 32%;
             position: static;
         }
         
@@ -695,7 +725,7 @@ top: 36px;
          .members {
              width: 50%;
              
-         }    
+         } 
      
          .members-container {
              display: grid;

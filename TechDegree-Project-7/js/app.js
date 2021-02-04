@@ -28,6 +28,8 @@ alertBanner.addEventListener('click', e => {
 sendButton.addEventListener('click', () => {
     if (userSearch.value === "" || userMessage.value === "") {
         alert("Both input fields must be filled out in order to send.")
+    } else {
+        alert("Your message has been successfully sent!")
     }
 
 });

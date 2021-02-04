@@ -62,22 +62,24 @@
         
        
         <!-- Bar Graph -->
-        <section class="daily">
-            <h3>Daily Traffic</h3>
-            <div>
-                <!-- Element Bar Graph in JS Will Attach To:(Below) -->
-                <canvas id="daily-chart"></canvas>
+        <div class="daily-mobile-desktop">
+            <section class="daily">
+                <h3>Daily Traffic</h3>
+                <div>
+                    <!-- Element Bar Graph in JS Will Attach To:(Below) -->
+                    <canvas id="daily-chart"></canvas>
+                </div>
+            </section>
+
+            <!-- Doughnut graph -->
+        <section class="mobile">
+            <h3>Mobile Users</h3>
+            <div class="widget-container-half">
+            <!-- Element Bar Graph in JS Will Attach To:(Below) -->
+            <canvas id="mobile-chart"></canvas>
             </div>
         </section>
-
-        <!-- Doughnut graph -->
-      <section class="mobile">
-        <h3>Mobile Users</h3>
-        <div class="widget-container-half">
-          <!-- Element Bar Graph in JS Will Attach To:(Below) -->
-          <canvas id="mobile-chart"></canvas>
-        </div>
-      </section>
+      </div>
 
        
         <!-- Social Stats Widget -->
@@ -270,7 +272,7 @@
                 <form class="messages-form">
                     <input type="text" placeholder="Search For User" class="form-field" id="user-Field">
                     <textarea placeholder="Message For User" class="form-area" id="messageField"></textarea>
-                    <button class="button-primary-send" id="send">Send</button>
+                    <button type="submit" class="button-primary-send" id="send">Send</button>
                 </form>
             <!-- End Messages Widget -->
             </section>
