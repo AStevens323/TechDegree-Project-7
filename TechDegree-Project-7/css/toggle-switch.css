@@ -27,8 +27,8 @@
   /* Checkbox
  */
   .switch-light {
-    position: relative;
-    display: block;
+    /* position: relative; */
+    display: inline;
     /* simulate default browser focus outlines on the switch,
    * when the inputs are focused.
    */

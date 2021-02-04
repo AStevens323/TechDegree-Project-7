@@ -114,7 +114,6 @@ canvas {
 .user-account {
     display: flex;
     align-items: center;
-    /* margin-left: 3%; */
     position: absolute;
     right: -47px;
     top: 8px;
@@ -140,9 +139,9 @@ canvas {
 
 .navigation {
     background-color: gray;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* width: 100vw; */
+     display: flex; 
+    justify-content: space-evenly; 
+     width: 100vw; 
 }
 
 .navigation img {
@@ -171,7 +170,6 @@ canvas {
 }
 
 .search-bar {
-    /* float: right; */
     margin-right: 5px;
     margin-left: 4px;
 }
@@ -185,12 +183,16 @@ canvas {
 
 /* Alert Banner Styling -------------------------------------------------------------------------------------------------------------- */
 
+.alert {
+    display: flex;
+    justify-content: center;
+}
+
 .alert-banner {
     background-color: #8652A1;
     border-radius: 5%;
     text-align: center;
     width: 95vw;
-    margin-left: 8px;
 }
 
 .alert-banner p {
@@ -201,8 +203,7 @@ canvas {
 }
 
 .alert-banner-close {
-    
-display: inline-block;
+    display: inline-block;
 }
 
 /* End Alert Banner Styling -------------------------------------------------------------------------------------------------------------- */
@@ -331,7 +332,6 @@ display: inline-block;
 .arrow-symbol {
     display: flex;
     align-items: center;
-    /* margin-right: 20px; */
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -385,6 +385,19 @@ display: inline-block;
 
 .settings-text {color: #8652A1;font-size: 15px;}
 
+.toggle-container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch-light {
+    
+width: 75%;
+}
+
+
 .timezone-select {
     text-align: center;
 }
@@ -397,20 +410,20 @@ display: inline-block;
 
 .settings-button {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px 0 10px 0;
 }
 
 .button-primary {
     float: left;
-    padding: 5px 15%;
+    padding: 9px 10%;
     background-color: #8652A1;
     color: white;
 }
 
 .button-disabled {
     float: right;
-    padding: 5px 15%;
+    padding: 9px 10%;
     background-color: #8652A1;
     color: white;
 }
@@ -494,7 +507,6 @@ display: inline-block;
      /* Alert Banner Styling ------------------------------------------------------------------------- */
 
      .alert-banner {
-         margin-left: 10px;
          width: 98%;
      }
 
@@ -503,9 +515,7 @@ display: inline-block;
      /* Social Stats Widget ------------------------------------------------------------------------------ */
 
      .social-container {
-         width: 60%;
-         position: relative;
-         left: 152px;
+         width: 100%;
      }
      
      /* End Social Stats Widget ------------------------------------------------------------------------------ */
@@ -515,14 +525,13 @@ display: inline-block;
             margin-left: 5px;
         }
     /* End Pie-graph Widget Styling ------------------------------------------------------------------------------ */
-
     
+    /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
+
     .member-float-container {
         display: flex;
 
     }
-    
-    /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
 
    .social-stats {
        display: flex;
@@ -573,14 +582,13 @@ display: inline-block;
         
     /* End New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
 
+    /* Settings/Messages Widget Styling ------------------------------------------------------------------------------ */
+
     .messages, .settings, .switch-light, .settings-button {
         width: 50%;
         border-left: 1px #E1E1E1 solid;
     }
 
-    .switch-light {
-        margin-left: 89px;
-    }
 
     .messages-settings-float-container {
         display: flex;
@@ -589,10 +597,13 @@ display: inline-block;
     .toggle-container {
         text-align: center;
         margin-left: -9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #timezone {
-        width: 50%;
+        width: 55%;
     }
 
     .settings-button {
@@ -604,18 +615,12 @@ display: inline-block;
         margin-top: 72px;
     }
 
+    /* End Settings/Messages Widget Styling ------------------------------------------------------------------------------ */
+
 }
 
 
-@media (min-width: 1024px) {
-    
-    .settings-container {
-
-    }
-    
-    
-    
-    
+@media (min-width: 1024px) {  
     /* User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
     
         .user-account {
@@ -623,45 +628,55 @@ display: inline-block;
             right: -35px;
             top: 8px;
         }
-        
-        .alert-banner {
-            margin-left: 8px;
-        }
-        
+           
     /* End User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
 
     /* Alert Banner Styling ------------------------------------------------------------------------------------------------------- */
-    
-        .alert-banner {
-        margin-left: 8px;
-         }
 
+    .alert {
+        display: flex;
+        justify-content: center;
+    }
+    
     /* End Alert Banner Styling ------------------------------------------------------------------------------------------------------- */
 
     /* Social Stats Container ------------------------------------------------------------------------------------------------ */
-        .social-stats {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .social-container {
-            width: 60%;
-            position: relative;
-            left: 187px;
+    .social-container {
+            width: 100%;
+            position: static;
         }
         
     /* End Social Stats Container ------------------------------------------------------------------------------------------------ */
 
+    /* Settings/Messaging Widget ------------------------------------------------------------------------------------------------ */
+
     .toggle-container {
         text-align: center;
-        margin-left: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
     }
 
     .button-primary-send {
         margin-top: 48px;
     }
-        
+
+    .settings-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timezone-select {
+        width: 50%;
+    }
+
+    .switch-light {
+        margin-left: 0;
+    }
+
+    /* End Settings/Messaging Widget ------------------------------------------------------------------------------------------------ */
         
     /* New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
          .members {
@@ -688,19 +703,7 @@ display: inline-block;
              width: 80px;
              height: 80px;
          }
-     
-         /* ============================= */
-         .members-text, .activity-text {
-             font-size: 14px;
-         }
-     
-         .activity-container {
-             flex-grow: 1;
-             position: relative;
-         }
-         
-         .recent-activity {
-             width: 50%;
-             }
-    /* End New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
-}
+
+    /*  End New Members/Recent Activity Widget Styling ------------------------------------------------------------------------------ */
+
+        }
