@@ -90,7 +90,7 @@ canvas {
 
   /* End Animation */
 
-.bell-container {display: flex;align-items: center;/* margin-left: 16%; */position: absolute;right: 142px;top: 21px;}
+.bell-container {display: flex;align-items: center;/* margin-left: 16%; */position: absolute;right: 123px;top: 21px;}
 
 .dot {
     height: 6px;
@@ -108,27 +108,27 @@ canvas {
 .header {
     display: flex;
     background-color: #8652A1;
-    width: 100vw;
+    width: 100%;
 }
 
 .user-account {
     display: flex;
     align-items: center;
     position: absolute;
-    right: -47px;
+    right: -28px;
     top: 8px;
 }
 
 .user-account img {
-    height: 50px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     float: right;
 }
 
 .user-account h3 {
     margin: 0%;
-    font-size: 15px;
+    font-size: 12px;
     margin-left: 5%;
     color: white;
 }
