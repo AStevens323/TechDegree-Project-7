@@ -90,7 +90,7 @@ canvas {
 
   /* End Animation */
 
-.bell-container {display: flex;align-items: center;/* margin-left: 16%; */position: absolute;right: 123px;top: 21px;}
+.bell-container {display: flex;align-items: center;/* margin-left: 16%; *//* position: absolute; *//* right: 123px; *//* top: 21px; */margin-right: 10px;margin-left: 10px;}
 
 .dot {
     height: 6px;
@@ -102,6 +102,11 @@ canvas {
 }
 
 
+.avatar-note-container {
+    
+display: flex;
+}
+
 /* End Bell Styling --------------------------------------------------------------------------------------------------------------- */
 
 /* Header/Heading Styling --------------------------------------------------------------------------------------------------------------- */
@@ -109,14 +114,15 @@ canvas {
     display: flex;
     background-color: #8652A1;
     width: 100%;
+    justify-content: space-between;
 }
 
 .user-account {
     display: flex;
     align-items: center;
-    position: absolute;
-    right: -28px;
-    top: 8px;
+    /* position: absolute; */
+    /* right: -28px; */
+    /* top: 8px; */
 }
 
 .user-account img {
@@ -411,7 +417,6 @@ width: 75%;
 .settings-button {
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 0 10px 0;
 }
 
 .button-primary {
@@ -476,29 +481,10 @@ width: 75%;
       }
 
       .bell-container {
+          display: flex;
+          align-items: center;
           
-display: flex;
-          
-align-items: center;
-          
-position: absolute;
-          
-right: 1px;
-          
-top: 36px;
       }
-    
-      .bell-icon {
-         position: absolute;
-         right: 167px;
-     }
-
-     .dot {
-     position: absolute;
-     right: 161px;
-     top: -11px;
-     }
-
      /* End Header Styling ------------------------------------------------------------------------- */
 
      /* Dashboard Styling ------------------------------------------------------------------------- */
@@ -621,7 +607,7 @@ top: 36px;
 
     .settings-button {
         width: 100%;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .button-primary-send {
@@ -635,12 +621,6 @@ top: 36px;
 
 @media (min-width: 1024px) {  
     /* User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
-    
-        .user-account {
-            position: absolute;
-            right: -35px;
-            top: 8px;
-        }
            
     /* End User Heading/Main Heading Styling -------------------------------------------------------------------------------------- */
 
